@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackEliteOfficial</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/home.css') }}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRVQRWCR76"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RRVQRWCR76');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5876500913152424" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="me">
+        <a href="https://replit.com/@hackelite01">
+      @Hackelite01
+    </a>
+        <a href="https://github.com/hackelite01">
+      Mayank Rajput
+  </a>
+    </div>
+    <div class="cont" style="text-align: center;">
+        <center>
+            <p class="title">H4CK SKILLSHARE?</p>
+        </center>
+
+        <center>
+            <div>
+                <p>001. &nbsp;&nbsp; Head over to <a href="https://skillshare.com/classes/">https://skillshare.com/classes/</a></p>
+                <p>002. &nbsp;&nbsp; Select a course, copy the course link</p>
+                <p>003. &nbsp;&nbsp; Paste the link below and heck it!</p>
+                <p style="opacity: 0.3; font-size: 85%;margin-top: 10px;">
+                    (Takes a while to load)
+                </p><br>
+            </div>
+        </center>
+
+
+
+        <div class="" style="font-family: 'Roboto Condensed', sans-serif !important">
+            <form action="{{ url_for('heckURL')}}" method="POST">
+                <label for="url"></label>
+                <input name="url" class="spb" type="text" placeholder="https://skillshare.com/classes/...."><br>
+                <input class="heckbtn" type="submit" value="H4CK">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

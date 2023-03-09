@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackEliteOfficial</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRVQRWCR76"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RRVQRWCR76');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5876500913152424" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="me">
+        <a href="https://replit.com/@hackelite01">
+            @hackelite01
+        </a>
+        <a href="https://github.com/hackelite01">
+          Mayank Rajput
+      </a>
+    </div>
+    <div class="cont">
+        <center>
+            <img class="thumb" src="{{thumb}}">
+        </center>
+        <center>
+            <p class="title">{{title}}</p>
+        </center>
+        <div class="linkcont">
+            {% for i in vid_links %}
+            <span>{{"0"if vid_links.index(i)<9}}{{vid_links.index(i)+1}} - <a href="play?id={{i}}" class="download_link">{{vid_names[vid_links.index(i)]}}</a></span> {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
