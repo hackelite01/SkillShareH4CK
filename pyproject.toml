@@ -12,7 +12,7 @@ slugify = "^0.0.1"
 Flask = "^2.1.2"
 telegram = "^0.0.1"
 validators = "^0.19.0"
-requests = "^2.27.1"
+requests = "^2.31.0"
 pyshorteners = "^1.0.1"
 python-dotenv = "^0.20.0"
 
